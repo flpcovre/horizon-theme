@@ -1,0 +1,44 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stablyai/orca/main/docs/schemas/plugins/orca-plugin.v2.schema.json",
+  "manifestVersion": 2,
+  "id": "horizon-theme",
+  "name": "Horizon Theme",
+  "version": "1.0.0",
+  "description": "A beautifully warm dual theme (Dark & Bright) for Orca, faithfully ported from Horizon Theme for VS Code.",
+  "author": {
+    "name": "Filipe Covre",
+    "url": "https://github.com/flpcovre"
+  },
+  "repository": "https://github.com/flpcovre/horizon-theme",
+  "license": "MIT",
+  "engines": {
+    "orca": ">=1.4.246"
+  },
+  "execution": "data",
+  "contributes": {
+    "themes": [
+      {
+        "id": "horizon",
+        "title": "Horizon",
+        "path": "themes/horizon.json"
+      },
+      {
+        "id": "horizon-bright",
+        "title": "Horizon Bright",
+        "path": "themes/horizon-bright.json"
+      }
+    ],
+    "terminalThemes": [
+      {
+        "id": "horizon-dark",
+        "title": "Horizon",
+        "path": "terminal-themes/horizon-dark.json"
+      },
+      {
+        "id": "horizon-bright",
+        "title": "Horizon Bright",
+        "path": "terminal-themes/horizon-bright.json"
+      }
+    ]
+  }
+}
